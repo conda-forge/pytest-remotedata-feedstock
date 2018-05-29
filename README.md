@@ -17,12 +17,15 @@ internet.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-remotedata-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-remotedata-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pytest-remotedata-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pytest-remotedata-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-remotedata/badges/version.svg)](https://anaconda.org/conda-forge/pytest-remotedata)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-remotedata/badges/downloads.svg)](https://anaconda.org/conda-forge/pytest-remotedata)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pytest--remotedata-green.svg)](https://anaconda.org/conda-forge/pytest-remotedata) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytest-remotedata.svg)](https://anaconda.org/conda-forge/pytest-remotedata) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytest-remotedata.svg)](https://anaconda.org/conda-forge/pytest-remotedata) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytest-remotedata.svg)](https://anaconda.org/conda-forge/pytest-remotedata) |
 
 Installing pytest-remotedata
 ============================
