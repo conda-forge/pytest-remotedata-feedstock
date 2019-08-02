@@ -34,7 +34,9 @@ test:
 
 about:
   home: {{ git_url }}
-  license: BSD
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.rst
   summary: 'Pytest plugin for controlling remote data access'
   description: |
     This package provides a plugin for the pytest framework that allows
