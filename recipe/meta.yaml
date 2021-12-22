@@ -18,14 +18,14 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
-    - pytest >=3.1
-    - six
+    - pytest >=4.6
+    - setuptools_scm
   run:
-    - python
-    - pytest >=3.1
-    - six
+    - python >=3.6
+    - pytest >=4.6
+    - packaging
 
 test:
   imports:
