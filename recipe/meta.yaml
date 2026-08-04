@@ -1,5 +1,5 @@
 {% set name = "pytest-remotedata" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 {% set git_url = "https://github.com/astropy/pytest-remotedata" %}
 
 package:
@@ -8,8 +8,8 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 05c08bf638cdd1ed66eb01738a1647c3c714737c3ec3abe009d2c1f793b4bb59
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: ad3eaa2691feecc2071890764d30e06211547577f965e2e4424435c5d887278d
 
 build:
   noarch: python
