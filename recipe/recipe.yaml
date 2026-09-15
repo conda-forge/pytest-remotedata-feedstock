@@ -1,17 +1,16 @@
 schema_version: 1
 
 context:
-  name: pytest-remotedata
-  version: "0.4.1"
+  version: 0.4.2
   git_url: https://github.com/astropy/pytest-remotedata
 
 package:
-  name: ${{ name|lower }}
-  version: ${{ version }}
+  name: pytest-remotedata
+  version: 0.4.2
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 05c08bf638cdd1ed66eb01738a1647c3c714737c3ec3abe009d2c1f793b4bb59
+  url: https://files.pythonhosted.org/packages/source/p/pytest-remotedata/pytest_remotedata-${{ version }}.tar.gz
+  sha256: ad3eaa2691feecc2071890764d30e06211547577f965e2e4424435c5d887278d
   file_name: ${{ name }}-${{ version }}.tar.gz
 
 build:
@@ -38,9 +37,6 @@ tests:
       python_version:
       - ${{ python_min }}.*
       - '*'
-  - requirements:
-      run:
-        - python ${{ python_min }}.*
 
 about:
   license: BSD-3-Clause
