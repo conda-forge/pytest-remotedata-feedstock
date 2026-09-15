@@ -11,7 +11,6 @@ package:
 source:
   url: https://files.pythonhosted.org/packages/source/p/pytest-remotedata/pytest_remotedata-${{ version }}.tar.gz
   sha256: ad3eaa2691feecc2071890764d30e06211547577f965e2e4424435c5d887278d
-  file_name: ${{ name }}-${{ version }}.tar.gz
 
 build:
   number: 0
