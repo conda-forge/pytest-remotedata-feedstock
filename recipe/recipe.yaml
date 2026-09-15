@@ -22,6 +22,7 @@ requirements:
     - python ${{ python_min }}.*
     - pip
     - pytest >=4.6
+    - setuptools
     - setuptools_scm
   run:
     - python >=${{ python_min }}
