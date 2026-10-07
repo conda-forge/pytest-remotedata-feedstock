@@ -1,0 +1,67 @@
+schema_version: 1
+
+context:
+  version: 0.4.2
+  git_url: https://github.com/astropy/pytest-remotedata
+
+package:
+  name: pytest-remotedata
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/p/pytest-remotedata/pytest_remotedata-${{ version }}.tar.gz
+  sha256: ad3eaa2691feecc2071890764d30e06211547577f965e2e4424435c5d887278d
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - pytest >=4.6
+    - setuptools
+    - setuptools_scm
+  run:
+    - python >=${{ python_min }}
+    - pytest >=4.6
+    - packaging
+
+tests:
+  - script:
+      - pytest -vvv --remote-data=none tests
+    requirements:
+      run:
+        - pytest
+    files:
+      source:
+        - tests/
+        - setup.cfg
+  - python:
+      imports:
+        - pytest_remotedata
+      pip_check: false
+      python_version:
+      - ${{ python_min }}.*
+      - '*'
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE.rst
+  summary: Pytest plugin for controlling remote data access
+  description: |
+    This package provides a plugin for the pytest framework that allows
+    developers to control unit tests that require access to data from the
+    internet.
+  homepage: ${{ git_url }}
+  repository: ${{ git_url }}
+  documentation: ${{ git_url }}
+
+extra:
+  recipe-maintainers:
+    - astrofrog-conda-forge
+    - drdavella
+    - mwcraig
+    - jsmolic
