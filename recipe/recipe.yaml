@@ -6,7 +6,7 @@ context:
 
 package:
   name: pytest-remotedata
-  version: 0.4.2
+  version: ${{ version }}
 
 source:
   url: https://files.pythonhosted.org/packages/source/p/pytest-remotedata/pytest_remotedata-${{ version }}.tar.gz
@@ -30,6 +30,15 @@ requirements:
     - packaging
 
 tests:
+  - script:
+      - pytest -vvv --remote-data=none tests
+    requirements:
+      run:
+        - pytest
+    files:
+      source:
+        - tests/
+        - setup.cfg
   - python:
       imports:
         - pytest_remotedata
