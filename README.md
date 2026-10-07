@@ -198,5 +198,6 @@ Feedstock Maintainers
 
 * [@astrofrog-conda-forge](https://github.com/astrofrog-conda-forge/)
 * [@drdavella](https://github.com/drdavella/)
+* [@jsmolic](https://github.com/jsmolic/)
 * [@mwcraig](https://github.com/mwcraig/)
 
